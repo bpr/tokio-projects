@@ -1,0 +1,19 @@
+[package]
+name = "tokio-broadcast"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "updates"
+path = "src/updates.rs"
+
+[[bin]]
+name = "remote_shutdown"
+path = "src/remote_shutdown.rs"
+
+[[bin]]
+name = "internal_comms"
+path = "src/internal_comms.rs"
+
+[dependencies]
+tokio = { version = "1.39.2", features = ["full"] }
